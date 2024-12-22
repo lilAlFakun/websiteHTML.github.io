@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Таблицы и Формы</title>
+    <link rel="stylesheet" href="table1.css">
+    <link rel="stylesheet" href="table2.css">
+    <meta property="og:title" content="Заголовок страницы в OG">
+    <meta property="og:description" content="Описание страницы в OG">
+    <meta property="og:image" content="https://example.com/image.jpg">
+    <meta property="og:url" content="https://example.com/">
+</head>
+<body>
+    <header>
+        <h1>Таблицы и Формы</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Вернуться на главную страницу</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Таблицы</h2>
+            <h3>Таблица А</h3>
+            <table class = "table-a" border="1" cellspacing="0">
+                <tbody>
+                <tr>
+                    <td colspan="5"></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td></td> 
+                    <td rowspan="3"></td>
+                    <td></td> 
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td rowspan="3"></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                </tr>
+                <tr>
+                     <td></td>
+                     <td></td> 
+                     <td></td> 
+                </tr>
+                <tbody/>
+            </table>
+            <h3>Таблица Б</h3>
+            <table class = "table-b" border="1" cellspacing="0">
+                <tbody>
+                    <!-- 1 -->
+                    <tr>
+                        <td colspan="8" bgcolor="#7FFFD4"></td>
+                    </tr>
+                    <!-- 2 -->
+                    <tr>
+                        <td rowspan="6" bgcolor="#FFFFEO"></td>
+                        <td colspan="6" bgcolor="#7FFFD4"></td>
+                        <td rowspan="6" bgcolor="#FFFFEO"></td>
+                    </tr>
+                    <!-- 3 -->
+                    <tr>
+                        <td rowspan="4" bgcolor="#FFFFEO"></td>
+                        <td colspan="4" bgcolor="#7FFFD4"></td>
+                        <td rowspan="4" bgcolor="#FFFFEO"></td>
+                    </tr>
+                    <!-- 4 -->
+                    <tr>
+                        <td rowspan="2" bgcolor="#FFFFEO"></td>
+                        <td bgcolor="#FF0000"> </td>
+                        <td bgcolor="#0000FF"> </td>
+                        <td rowspan="2" bgcolor="#FFFFEO"></td>
+                    </tr>
+                    <!-- 5 -->
+                    <tr>
+                        <td bgcolor="#00FF7F"> </td>
+                        <td bgcolor="#FFFF00"> </td>
+    
+                    </tr>
+                    <!-- 6 -->
+                    <tr>
+                        <td colspan="4" bgcolor="#7FFFD4"></td>
+                    </tr>
+                    <!-- 7 -->
+                    <tr>
+                        <td colspan="6" bgcolor="#7FFFD4"></td>
+                    </tr>
+                    <!-- 8 -->
+                    <tr>
+                        <td colspan="8" bgcolor="#7FFFD4"></td>
+                    </tr>
+                    <tbody />
+            </table>
+        </section>
+
+        <section>
+            <h2>Формы</h2>
+            <h3>Форма А</h3>
+            <h3>ЗАО Птицефабрика №1</h3> 
+            <form>
+                <p> <input type="text" placeholder="Фамилия" required> </p>
+                <p> <input type="text" placeholder="Инициалы" required> </p>
+                <p> <input type="password" placeholder="Пароль" required> </p>
+                <p> <input type="text" placeholder="Адрес получателя" size="40px" required> </p>
+                <p> <input type="text" placeholder="Количество" size="10px" required> </p>
+                <p> Тип
+                    <select>
+                        <option>Куриные</option>
+                        <option>Страусинные</option>
+                        <option>Перепилинные</option>
+                    </select>
+                    <select>
+                        <option>Отборные</option>
+                        <option>Обычные</option>
+                        <option>Фермерские</option>
+                    </select>
+                </p>
+                <p> Доставка <x> <input type="radio" name="dilivery" checked>Почтой
+                        <input type="radio" name="dilivery" checked>Электронно
+                        <input type="radio" name="dilivery" checked>Курьером
+                    </x>
+                </p>
+                <p> Требуется накладная <input type="checkbox"> </p>
+                <p> <textarea placeholder="Дополнительная информация " cols="50" rows="3"></textarea> </p>
+                <p> <input type="submit" value="Заказать"> <input type="reset" value="Отменить"> </p>
+            </form>
+            <h3>Форма Б</h3>
+            <h3>Пример формы регистрации сайта</h3>
+            <form>
+                Логин: <br />
+                <input type="email" maxlength="30" /> <br />
+                Пароль: <br />
+                <input type="password" maxlength="30" /> <br />
+                URL-адрес сайта: <br />
+                <input type="url" maxlength="30" /> <br />
+                Название сайта: <br />
+                <input type="url" maxlength="30" /> <br />
+                Описание сайта: <br />
+                <textarea cols="50" rows="10"></textarea> <br />
+                Тема сайта: <br />
+                <select>
+                    <option>Не выбранна</option>
+                    <option>Темная</option>
+                    <option>Светлая</option>
+                </select>
+                <br />Баннер 88х31: <br />
+                <input type="file" /> <br />
+                <p> <input type="reset" value="Очистить"> <input type="submit" value="Отправить"> </p>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
